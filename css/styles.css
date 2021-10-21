@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: Poppins;
+    
+}
+main{
+    background-color: #fafafa;
+}
+
+#top{
+    padding: 0 10%;
+    background-color:#F89B1C ;
+    display: flex;
+    color: white;
+    font-weight: bold;
+}
+    #top p:nth-child(1){
+        margin-right: 3%;
+    }
+    #top p:nth-child(2){
+        margin-right: 8%;
+    }
+
+    #top img{
+        width: 18px;
+        height: 19.71px;
+        position: relative;
+    }
+nav{
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    padding: 0 10%;  
+    box-shadow:0 4px 4px -2px gray; 
+    margin-bottom: 3%;
+}
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        list-style: none;
+        justify-content: end;
+        padding: 15px;
+        font-size: 18px;
+        
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+
+    }
+    nav ul li a span{
+        background-color: #A6CE39;
+        padding: 1px;
+    }
+    nav ul li a img{
+        padding-top: 2px;
+    }
+    .active{
+        border-bottom: 5px solid #A6CE39;
+    }
+#home{
+    background-color: #F89B1C;
+    margin: auto;
+    width: 80%;
+     border-radius: 50px;
+    padding: 8% 4%;
+}
+    #home h1{
+        color: #fff;
+        font-size: 3em;
+        font-family:  Roboto;
+    }
+    #home p {
+        font-size: 18px;
+
+    }
+    #food{
+        position: relative;        
+        margin: 15px;
+        float: right;
+        width: 40vw;
+        height: 50%;
+        shape-outside: circle();    
+    }
+    #home > #order{
+        border-radius: 5px;
+        padding: 2px 10px;
+        color: #fff;
+        background-color: #A6CE39;
+        font-size: 24px;
+        border: none;
+        font-weight: 500;
+    }
+    #pointer {
+        border-radius: 50%;  
+        background-color: #A6CE39;
+        border: none;   
+        position: relative;   
+        margin: auto;
+        left: 50%;
+        top: -30px;
+    }
+    button#pointer img{
+        width: 60px;
+        height: 40px;
+    }
+header{
+    height: 30vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0,.5)),
+    url(/images/Rectangle.png);
+    
+}
+
+    header h1{
+        color: #fff;
+        font-size: 48px;
+        font-weight: bolder;
+        font-family: Roboto;
+        text-decoration: underline overline 10px;
+        text-decoration-color: #F89B1C;
+        text-align: center;
+        position: relative;
+        top: 50%;
+    }
+#about{
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+    #aboutbody{
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        padding: 8% 0 4% 4%
+    }
+    #aboutleft{
+        width: 100%;
+        padding-right: 4%;
+        font-size: 18px;
+    }
+    #aboutleft h1{
+        color: #F89B1C;
+        font-weight: bolder;
+    }
+    #aboutleft span{
+        text-decoration-line: underline;
+        text-decoration-color: #A6CE39;
+    }
+    #aboutleft button{
+        color: #fff;
+        border-radius: 5px;
+        padding: 2% 4%;
+        border: none;
+        background-color: #A6CE39;
+        font-weight: 700;
+    }
+    #aboutright{
+        width: 100%;
+        position: relative;        
+    }
+    #aboutright img{
+        position: absolute;
+        top: -8vh;
+        left: 15%;
+    }
+    #base-lime{
+        position: relative;
+        top: 20%;
+        right: -8%;
+        height: 92%;
+        background-color: #A6CE39;
+        border-radius: 50px 0 0 50px;
+    }
+    .blank-div{
+        border: 4px solid #F89B1C;
+        height: 70%;
+        border-radius: 50px;
+        position: absolute;
+        width: 90%;    
+    }
+    #a{
+        top: 2%;
+    }
+    #b{
+        top: 12%;
+        left: 7%;
+    }
+#menusection{
+    margin-bottom: 10%;
+}
+#menuimage{
+    background-image: url(/images/Rectangle\ 15.png);
+}
+#forline{
+    border-bottom: 7px solid #A6CE39;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3%;
+    
+}
+#menuNav{
+    box-shadow:none; 
+    position: relative;
+    bottom: -38%;
+    margin-bottom: -20px;  
+    margin-left: -80px;
+    margin-right: -80px;  
+}
+    #menuNav h1{
+        color: #F89B1C;
+        position: relatabive;
+        top: 30%;
+    }
+    #menuNav ul li{
+        list-style: none;
+        justify-content: end;
+        padding: 9px;
+        font-size: 18px;
+        background-color: #A6CE39;
+        margin: 0 2%;
+        width: 80px;
+        text-align: center;
+        border-radius: 15% 15% 0 0;
+        color: #fff;
+        font-weight: bolder;
+        position: relative;
+        
+    }
+    .foodtype{
+        text-align: center;
+        padding-top: 8%; 
+        width: 80%;     
+        margin: auto;  
+    }
+    .foodtype h1{
+        color: #A6CE39;
+        text-decoration: underline 5px;
+        text-decoration-color: #F89B1C;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .foodtittle{
+        color: #A6CE39;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .column{
+        margin: 4% 1% 0 0;
+        padding: 2%;
+        box-shadow:0 4px 4px -2px gray; 
+        width: 33.3333%;
+        border-radius: 5%;
+        background-color: #fff;
+
+
+    }
+    .column p{
+        font-size: 15px;
+    }
+    .orderbtn{
+        background-color: #F89B1C;
+        padding: 1% 4%;
+        border-radius: 5%;
+        border: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 21px;
+    }
+#contactImages{
+    background-image: url(/images/Contactframe.png);
+}
