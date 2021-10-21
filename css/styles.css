@@ -115,7 +115,7 @@ header{
     height:20vh;
     width: 100%;
     background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)),
-    url(images/Rectangle.png);
+    url(/images/Rectangle.png);
     
 }
 
@@ -197,7 +197,7 @@ header{
     margin-bottom: 10%;
 }
 #menuimage{
-    background-image: url(images/Rectangle\ 15.png);
+    background-image: url(/images/Rectangle\ 15.png);
 }
 #forline{
     border-bottom: 7px solid #A6CE39;
@@ -280,7 +280,7 @@ header{
     margin-bottom: 30%;
 }
     #contactImages{
-    background-image: url(images/Contactframe.png);
+    background-image: url(/images/Contactframe.png);
 }
     #contactbody{
         width: 50%;
