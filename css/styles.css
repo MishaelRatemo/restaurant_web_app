@@ -274,3 +274,32 @@ header{
 #contactImages{
     background-image: url(/images/Contactframe.png);
 }
+    #contactbody{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    #contactbody h1{
+        text-align: center;
+        color: #A6CE39;
+        text-decoration: underline 4px;
+        text-decoration-color: #F89B1C;
+    }
+    #contactbody .inputs{
+        margin-bottom: 5%;
+        border-radius: 8px;
+        font-size: 17px;
+        padding: 3% 2%;
+        border: none;
+        box-shadow: 4px 2px 10px -2px gray;
+ 
+    }
+    
+    .inputs:focus + label{
+        /* outline: #F89B1C solid 4px; */
+        color: #F89B1C;
+
+
+ }
