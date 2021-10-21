@@ -33,6 +33,11 @@ nav{
     padding: 0 10%;  
     box-shadow:0 4px 4px -2px gray; 
     margin-bottom: 3%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+
+
 }
     nav ul{
         display: flex;
@@ -107,9 +112,9 @@ nav{
         height: 40px;
     }
 header{
-    height: 30vh;
+    height:20vh;
     width: 100%;
-    background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0,.5)),
+    background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)),
     url(/images/Rectangle.png);
     
 }
@@ -271,7 +276,10 @@ header{
         font-weight: 500;
         font-size: 21px;
     }
-#contactImages{
+#contact{
+    margin-bottom: 30%;
+}
+    #contactImages{
     background-image: url(/images/Contactframe.png);
 }
     #contactbody{
@@ -297,9 +305,52 @@ header{
  
     }
     
-    .inputs:focus + label{
-        /* outline: #F89B1C solid 4px; */
+    .inputs:focus {
+        outline: #F89B1C solid 2px;
+    
+    }
+    #contactbody:focus-within label{
         color: #F89B1C;
+        font-weight: 900;
+    }
 
+/************************* Media Queries *********/ 
+@media screen and ( max-width:600px){
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li:hover{
+        background-color: #F89B1C;
+        border-radius: 5%;
+    }
+    #aboutbody{
+        display: block;
+    }
 
- }
+    .row{
+        display: block;
+    }
+    .column{
+        width: 100%;
+    }
+    #aboutleft{
+        margin-bottom: 3%;
+    }
+    #aboutright img{
+        position: relative;
+        top: -2vh;
+        left: 15%;
+    }
+    #base-lime{
+        position: relative;
+        top: 20%;
+        /* right: -8%; */
+        height: 92%;
+        background-color: #A6CE39;
+        border-radius: 50px 0 0 50px;
+        z-index: 2;
+
+    }
+
+    
+}
