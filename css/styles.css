@@ -114,7 +114,7 @@ nav{
 header{
     height:20vh;
     width: 100%;
-    background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url("images/Rectangle.png");
+    background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url(../images/Rectangle.png);
 
 }
 
@@ -196,7 +196,7 @@ header{
     margin-bottom: 10%;
 }
 #menuimage{
-    background-image: url("images/Rectangle15.png");
+    background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url(../images/Rectangle15.png);
 
 }
 #forline{
@@ -281,7 +281,7 @@ header{
 }
     #contactImages{
 
-    background-image: url("images/Contactframe.png");
+    background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url(../images/Contactframe.png);
     }
      #contactbody{
         width: 50%;
