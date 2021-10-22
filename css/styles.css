@@ -114,13 +114,8 @@ nav{
 header{
     height:20vh;
     width: 100%;
-    background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)),
-<<<<<<< HEAD
-    url("images/Rectangle.png");
-=======
-    url(images/Rectangle.png);
->>>>>>> c41afa18d8a1580a2cb8d84ab2e224b92339de76
-    
+    background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url("images/Rectangle.png");
+
 }
 
     header h1{
@@ -201,11 +196,8 @@ header{
     margin-bottom: 10%;
 }
 #menuimage{
-<<<<<<< HEAD
     background-image: url("images/Rectangle15.png");
-=======
-    background-image: url(images/Rectangle15.png);
->>>>>>> c41afa18d8a1580a2cb8d84ab2e224b92339de76
+
 }
 #forline{
     border-bottom: 7px solid #A6CE39;
@@ -288,13 +280,10 @@ header{
     margin-bottom: 30%;
 }
     #contactImages{
-<<<<<<< HEAD
+
     background-image: url("images/Contactframe.png");
-=======
-    background-image: url(images/Contactframe.png);
->>>>>>> c41afa18d8a1580a2cb8d84ab2e224b92339de76
-}
-    #contactbody{
+    }
+     #contactbody{
         width: 50%;
         margin: auto;
         display: flex;
