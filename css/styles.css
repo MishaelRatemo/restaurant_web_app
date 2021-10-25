@@ -361,7 +361,7 @@ header{
 }
 @media screen and ( max-width:600px){
     nav {
-        height: 10vh;
+        height: 20vh;
         overflow: scroll;
         display: flex;
         flex-direction: column;
