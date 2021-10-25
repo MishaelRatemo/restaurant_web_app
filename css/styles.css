@@ -34,9 +34,15 @@ nav{
     box-shadow:0 4px 4px -2px gray; 
     margin-bottom: 3%;
     position: sticky;
+   
     top: 0;
     background-color: #fff;
-
+}
+#mainnav {
+    z-index: 3;
+}
+#mainnav img{
+    /* width: 100%; */
 
 }
     nav ul{
@@ -69,7 +75,7 @@ nav{
     background-color: #F89B1C;
     margin: auto;
     width: 80%;
-     border-radius: 50px;
+    border-radius: 50px;
     padding: 8% 4%;
 }
     #home h1{
@@ -106,21 +112,20 @@ nav{
         margin: auto;
         left: 50%;
         top: -30px;
+        margin-bottom: 10%;
     }
     button#pointer img{
         width: 60px;
         height: 40px;
     }
 header{
-    height:20vh;
+    height:30vh;
     width: 100%;
     background:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url(../images/Rectangle.png);
-
 }
-
     header h1{
         color: #fff;
-        font-size: 48px;
+        font-size: 6vw;
         font-weight: bolder;
         font-family: Roboto;
         text-decoration: underline overline 10px;
@@ -166,6 +171,7 @@ header{
         position: relative;        
     }
     #aboutright img{
+        width: 80%;
         position: absolute;
         top: -8vh;
         left: 15%;
@@ -203,8 +209,7 @@ header{
     border-bottom: 7px solid #A6CE39;
     width: 80%;
     margin: auto;
-    margin-bottom: 3%;
-    
+    margin-bottom: 3%;    
 }
 #menuNav{
     box-shadow:none; 
@@ -213,6 +218,7 @@ header{
     margin-bottom: -20px;  
     margin-left: -80px;
     margin-right: -80px;  
+    border-bottom: 7px solid #A6CE39;
 }
     #menuNav h1{
         color: #F89B1C;
@@ -231,8 +237,7 @@ header{
         border-radius: 15% 15% 0 0;
         color: #fff;
         font-weight: bolder;
-        position: relative;
-        
+        position: relative;        
     }
     .foodtype{
         text-align: center;
@@ -246,26 +251,39 @@ header{
         text-decoration-color: #F89B1C;
     }
     .row{
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .column{
+        /* margin: 4% 1% 0 0; */
+        padding: 2%;
+        box-shadow:0 4px 4px -2px gray; 
+        border-radius: 5%;
+        background-color: #fff;
+        width: 25%;
+        margin-bottom: 3%;
+        flex-basis: 25%;
+        align-self: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+
     }
     .foodtittle{
         color: #A6CE39;
         font-weight: bold;
         font-size: 24px;
     }
-    .column{
-        margin: 4% 1% 0 0;
-        padding: 2%;
-        box-shadow:0 4px 4px -2px gray; 
-        width: 33.3333%;
-        border-radius: 5%;
-        background-color: #fff;
-
-
-    }
     .column p{
         font-size: 15px;
+    }
+    .column img{
+        width: 80%;
     }
     .orderbtn{
         background-color: #F89B1C;
@@ -275,6 +293,8 @@ header{
         color: #fff;
         font-weight: 500;
         font-size: 21px;
+        display: inline-block;
+        margin-top: auto;
     }
 #contact{
     margin-bottom: 30%;
@@ -316,7 +336,37 @@ header{
     }
 
 /************************* Media Queries *********/ 
+@media ( max-width:768px){
+    .row{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;        
+    }
+    .column{
+        padding: 2%;
+        box-shadow:0 4px 4px -2px gray; 
+        border-radius: 5%;
+        background-color: #fff;
+        margin-bottom: 3%;
+        flex-basis: 40%;
+        align-self: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        
+    }
+}
 @media screen and ( max-width:600px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* z-index: 3; */
+        background-color: #fff;
+    }
     nav ul{
         flex-direction: column;
     }
@@ -325,11 +375,11 @@ header{
         border-radius: 5%;
     }
     #aboutbody{
-        display: block;
+        flex-direction: column;
     }
 
     .row{
-        display: block;
+        flex-direction: column;
     }
     .column{
         width: 100%;
@@ -338,19 +388,17 @@ header{
         margin-bottom: 3%;
     }
     #aboutright img{
+        width: 80%;
         position: relative;
         top: -2vh;
         left: 15%;
     }
     #base-lime{
-        position: relative;
-        top: 20%;
-        /* right: -8%; */
-        height: 92%;
+        width: 100vw;
+        height: 40vh;
+        position: absolute;
         background-color: #A6CE39;
         border-radius: 50px 0 0 50px;
-        z-index: 2;
-
     }
 
     
